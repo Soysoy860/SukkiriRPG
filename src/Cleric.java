@@ -3,9 +3,25 @@ import java.util.*;
 public class Cleric {
     String name;
     int hp = 50;
-    final int MAXHP = 50;
+    static final int MAXHP = 50;
     int mp = 10;
-    final int MAXMP =10;
+    static final int MAXMP =10;
+
+//コンストラクタの作成
+//３つの引数
+   Cleric(String name,int hp, int mp){
+    this.name = name;
+    this.hp = hp;
+    this.mp = mp;
+   }
+   //2つの引数
+    Cleric(String name,int hp){
+    this(name,hp,Cleric.MAXMP);
+    }
+
+    Cleric(String name){
+    this(name,Cleric.MAXHP,Cleric.MAXMP);
+    }
 
     //HP回復魔法
     void selfAid(){
