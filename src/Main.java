@@ -17,8 +17,7 @@ public class Main {
         m2.hp = 48;
         m2.suffix = 'B';
 
-        Cleric c = new Cleric();
-        c.name ="聖職者";
+        Cleric c = new Cleric("マイ");
 
         Wizard w = new Wizard();
         w.name="魔法使い";
